@@ -43,7 +43,7 @@ elif source == "Upload dari penyimpanan lokal":
         st.video(up_video)
         title = vid_name
         st.subheader(f"{title}")
-        st.subheader(f"{up_video}")
+        #st.subheader(f"{up_video}")
 
         # proses traskrip
         placeholder = st.empty()
