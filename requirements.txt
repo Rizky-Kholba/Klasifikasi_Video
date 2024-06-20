@@ -1,7 +1,7 @@
 streamlit
 pydeck
+ntlk
 pytube
 openai-whisper
 pandas
 Sastrawi
-ntlk
