@@ -4,3 +4,4 @@ pytube
 openai-whisper
 pandas
 Sastrawi
+ntlk
