@@ -1,6 +1,6 @@
 streamlit
 pydeck
-pytube==12.1.0
+pytube>=10.5.3
 openai-whisper
 shutil
 os
