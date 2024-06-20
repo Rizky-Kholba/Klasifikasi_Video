@@ -22,7 +22,7 @@ def cleaning_text(text):
 
 
 # Lemmatization
-key_norm = pd.read_csv(".\corpus\key_norm.csv")
+key_norm = pd.read_csv("corpus\key_norm.csv")
 
 
 def lematization(text):
