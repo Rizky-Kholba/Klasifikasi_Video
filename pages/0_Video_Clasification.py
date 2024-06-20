@@ -3,7 +3,12 @@ from helper.download import *
 from helper.transcribe import *
 
 
-# ====================================================================
+st.set_page_config(
+    page_title="Klasifikasi Topik Video",
+    page_icon="🎥",
+    initial_sidebar_state="expanded",
+)
+
 st.title("Video Clasification")
 
 source = st.selectbox(
@@ -26,7 +31,7 @@ if source == "YouTube":
             with st.spinner("Transcribing..."):
                 label, text = yt_clasify_pipeline(title)
             placeholder.empty()
-            st.success(f"Predicted Label: {label}")
+            st.success(f"Prediksi Topik: {label}")
             # st.write(f"Transcribed Text: {text}")
 
 elif source == "Upload dari penyimpanan lokal":
@@ -47,5 +52,5 @@ elif source == "Upload dari penyimpanan lokal":
             with st.spinner("Transcribing..."):
                 label, text = yt_clasify_pipeline(title)
             placeholder.empty()
-            st.success(f"Predicted Label: {label}")
+            st.success(f"Prediksi Topik: {label}")
             # st.write(f"Transcribed Text: {text}")
