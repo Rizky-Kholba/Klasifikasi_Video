@@ -5,3 +5,6 @@ openai-whisper
 pandas
 Sastrawi
 nltk
+pickle
+scikit-learn
+sklearn
