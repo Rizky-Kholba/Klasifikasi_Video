@@ -22,7 +22,7 @@ if source == "YouTube":
         st.video(url)
         with st.spinner("Downloading..."):
             title = yt_downloader(url)
-        st.subheader(f"Judul video: {title}")
+        st.subheader(f"{title}")
 
         # proses traskrip
         placeholder = st.empty()
@@ -30,7 +30,7 @@ if source == "YouTube":
             title = title + ".mp4"
             label, text = yt_clasify_pipeline(title)
             placeholder.empty()
-            st.success(f"{label}")
+            st.success(f"Prediksi Topik: {label}")
             # st.write(f"Transcribed Text: {text}")
 
 elif source == "Upload dari penyimpanan lokal":
