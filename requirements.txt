@@ -4,4 +4,4 @@ pytube
 openai-whisper
 pandas
 Sastrawi
-ntlk==3.8.1
+
