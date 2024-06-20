@@ -28,10 +28,9 @@ if source == "YouTube":
         placeholder = st.empty()
         if placeholder.button("Mulai Proses"):
             title = title + ".mp4"
-            with st.spinner("Transcribing..."):
-                label, text = yt_clasify_pipeline(title)
+            label, text = yt_clasify_pipeline(title)
             placeholder.empty()
-            st.success(f"Prediksi Topik: {label}")
+            st.success(f"{label}")
             # st.write(f"Transcribed Text: {text}")
 
 elif source == "Upload dari penyimpanan lokal":
@@ -43,14 +42,13 @@ elif source == "Upload dari penyimpanan lokal":
         # tampilkan dan download video
         st.video(up_video)
         title = vid_name
-        st.subheader(f"Judul video: {title}")
+        st.subheader(f"{title}")
         st.subheader(f"{up_video}")
 
         # proses traskrip
         placeholder = st.empty()
         if placeholder.button("Mulai Proses"):
-            with st.spinner("Transcribing..."):
-                label, text = yt_clasify_pipeline(title)
+            label, text = yt_clasify_pipeline(title)
             placeholder.empty()
             st.success(f"Prediksi Topik: {label}")
             # st.write(f"Transcribed Text: {text}")
