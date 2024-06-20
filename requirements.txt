@@ -1,0 +1,12 @@
+streamlit
+pydeck
+pytube
+openai-whisper
+shutil
+os
+re
+pandas
+Sastrawi
+ntlk
+warnings
+pickle
