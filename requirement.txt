@@ -1,6 +1,5 @@
 streamlit
-pydeck
-pytube>=10.5.3
+pytube
 openai-whisper
 shutil
 os
