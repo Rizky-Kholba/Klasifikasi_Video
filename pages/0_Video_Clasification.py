@@ -1,6 +1,6 @@
 import streamlit as st
 from helper.download import *
-from helper.transcribe import *
+from helper.processing import *
 
 
 st.set_page_config(
